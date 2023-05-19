@@ -197,6 +197,19 @@ const findAllPublishedTutorial = (req, res) => {
 
 
 
+  const FindAnd=(req,res)=> tutorial.findAll({ 
+    where: {
+        [Op.and] : [
+            {
+              id: { [Op.like]: '1' }
+            },
+            {
+              title: {[Op.like]: "math"}
+            }
+        ]        
+    } 
+  })
+
 module.exports = {
     createTutorial,
     upload,
@@ -205,6 +218,6 @@ module.exports = {
     updateTutorial,
     deleteTutorial,
     deleteAllTutorial,
-    findAllPublishedTutorial
-
+    findAllPublishedTutorial,
+    FindAnd
 }

@@ -15,4 +15,7 @@ router.delete("/deleteAllTutorial",controller.deleteAllTutorial);
 
 router.get("/findAllPublishedTutorial",controller.findAllPublishedTutorial)
 
+router.get("/op-And",controller.FindAnd);
+
+
 module.exports=router;
