@@ -1,0 +1,80 @@
+
+//! AGGREGATE FUNCTION
+
+count()
+
+select count(column name )from (table name);
+
+sum ()
+
+select sum (column name)from (table name );
+
+avg()
+
+select avg(columnname)from (table name);
+
+min()
+
+select min(column name) from (table name);
+
+max()
+select max(column name)from (table name);
+
+group by()
+
+select column_name ,COUNT (column_name),
+sum(column_name),avg(column_name),
+min(column_name),max(column_name)from tabel name GROUP BY column_name
+
+//! STRING FUNCTION
+
+Concat()
+
+select concat(str1,str2)from tabel_name;
+
+upper()
+
+select upper(str)from tabel_name;
+
+lower()
+
+select lower(str)from tabel_name;
+
+length()
+
+select length(str)from tabel_name;
+
+trim()
+
+select trim(str)from tabel_name;
+
+substring()
+
+select substring(str,start_position,length)from tabel_name;
+
+repalce()
+
+select replace(str,old_substr,new_substr)from tabel_name;
+
+getdate()
+
+select getdate()from tabel_name;
+
+datepart()
+
+select datepart(part,date) from tabel_name;
+
+part=year,month ,day
+
+dateAdd()
+
+select dateAdd(unit,value,date)from tabel_name; //unit to a date or time value
+
+datediff()
+
+select datediff(unit,start_date,end_date)from tabel_name;
+
+year()
+
+select year(date)from table_name
+
